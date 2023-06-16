@@ -14,7 +14,7 @@ import (
 var key string
 
 func init() {
-	key := os.Getenv("SECRET_KEY")
+	key = os.Getenv("SECRET_KEY")
 	if key == "" {
 		key = "secret-key"
 	}
